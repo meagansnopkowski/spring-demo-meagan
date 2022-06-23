@@ -15,4 +15,7 @@ class CalculatorService {
     fun multiple(a: Int, b: Int): Int {
         return a * b
     }
+    fun divide(a: Int, b: Int): Double {
+        return (a.toDouble ()/b.toDouble())
+    }
 }

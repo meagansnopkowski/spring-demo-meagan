@@ -14,4 +14,23 @@ class CalculatorController(
         @RequestParam a: Int,
         @RequestParam b: Int
     ): Int = calculatorService.add(a, b)
+
+    @GetMapping ("/subtract")
+    fun subtract (
+        @RequestParam a: Int,
+        @RequestParam b: Int
+    ): Int = calculatorService.subtract(a,b)
+
+    @GetMapping ("/multiple")
+    fun multiple(
+        @RequestParam a: Int,
+        @RequestParam b: Int
+    ): Int = calculatorService.multiple(a,b)
+
+    @GetMapping ("/divide")
+    fun divide(
+        @RequestParam a: Int,
+        @RequestParam b: Int
+    ): Double = calculatorService.divide(a,b)
+
 }
